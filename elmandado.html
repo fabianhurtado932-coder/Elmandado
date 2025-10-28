@@ -1,0 +1,56 @@
+<!doctype html>
+<button id="loginBtn" class="pill">Iniciar sesión demo</button>
+<button id="mockOrdersBtn" class="btn-ghost">Cargar pedidos </button>
+</div>
+</div>
+<div class="status">
+<div class="muted">Estado del backend</div>
+<div id="backendStatus" class="pill">Conectado (demo)</div>
+</div>
+</div>
+
+
+<div id="menu" class="card">
+<h2>Menú popular</h2>
+<div class="menu-list" id="menuList"></div>
+</div>
+
+
+<div id="about" class="card">
+<h2>Arquitectura (resumen)</h2>
+<ul class="muted">
+<li>GestorUsuarios: registro y autenticación.</li>
+<li>GestorPedidos: gestión de pedidos.</li>
+<li>GestorPagos: procesamiento de pagos.</li>
+<li>GestorNotificaciones: envíos al usuario.</li>
+</ul>
+</div>
+</section>
+
+
+<aside class="cart card">
+<h3>Carrito <span id="cartCount">0</span></h3>
+<div class="cart-items" id="cartItems">
+<p class="muted">Tu carrito está vacío.</p>
+</div>
+<div class="cart-summary">
+<div>
+<div class="muted small">Total</div>
+<strong id="cartTotal">$0.00</strong>
+</div>
+<div class="actions">
+<button id="checkoutBtn" class="pill">Pagar</button>
+<button id="clearCartBtn" class="btn-ghost">Vaciar</button>
+</div>
+</div>
+</aside>
+</main>
+
+
+<div class="toast-wrap" id="toasts"></div>
+<footer>
+<small>&copy; 2025 El Mandado — Demo académica</small>
+</footer>
+<script src="elmandado.js"></script>
+</body>
+</html>

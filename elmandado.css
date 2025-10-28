@@ -1,0 +1,65 @@
+:root {
+cursor: pointer;
+}
+
+
+.pill {
+background: var(--accent);
+color: white;
+border: none;
+padding: 8px 12px;
+border-radius: 10px;
+}
+
+
+.btn-ghost {
+border: 1px solid #e5e7eb;
+background: transparent;
+padding: 8px 12px;
+border-radius: 10px;
+}
+
+
+.cart {
+position: sticky;
+top: 20px;
+}
+
+
+.cart-row {
+display: flex;
+justify-content: space-between;
+border-bottom: 1px solid #f3f4f6;
+padding: 8px 0;
+}
+
+
+.toast-wrap {
+position: fixed;
+right: 20px;
+bottom: 20px;
+display: flex;
+flex-direction: column;
+gap: 8px;
+}
+
+
+.toast {
+background: #111827;
+color: white;
+padding: 10px 14px;
+border-radius: 10px;
+}
+
+
+footer {
+text-align: center;
+color: var(--muted);
+margin-top: 40px;
+}
+
+
+@media (max-width: 900px) {
+main { grid-template-columns: 1fr; }
+.menu-list { grid-template-columns: 1fr; }
+}
