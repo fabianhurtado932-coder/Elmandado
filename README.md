@@ -3,53 +3,48 @@
 
 ## 📌 Información General
 **Nombre del Proyecto:**  
-<!-- El mandado -->
+El mandado
 
 **Equipo de Desarrollo:**  
-<!--Marco Antonio Segura Cuero, Fabian Andres Hurtado Viafara, Carlos Eduardo Ñañez Gonzales -->
+Marco Antonio Segura Cuero
+Fabian Andres Hurtado Viafara
+Carlos Eduardo Ñañez Gonzales
 
 **Programa:** Ingeniería de Software I  
 **Institución:** UNAD – Instituto Técnico Profesional  
 **Grupo:** S441B-2  
 **Versión del Documento:** v2 (Sesión 11)  
-**Fecha de actualización:** <!-- Ej: 21/10/2025 -->
+**Fecha de actualización:**  31/10/2025
 
 ---
 
 ## 🎯 1. Descripción General del Proyecto
-<!-- Resume el propósito del software: qué problema soluciona, quién lo usará, cuál es su objetivo principal. -->
 
-El proyecto busca desarrollar una plataforma de gestión de pedidos que permita a los usuarios consultar menús, realizar pedidos y comunicarse con los restaurantes o repartidores, promoviendo una experiencia más ágil e intuitiva al momento de ordenar comida.
----
+El proyecto **El Mandado** busca desarrollar una aplicación móvil y web que facilite la **gestión de pedidos y entregas de comida o productos locales**, conectando usuarios, domiciliarios y comercios de la zona.  
+Su objetivo principal es **optimizar los procesos de compra y entrega**, ofreciendo una experiencia ágil, segura y práctica tanto para clientes como repartidores.
 
 ## 🧠 2. Contexto y Justificación
-<!-- Explica por qué se escogió este proyecto, cuál es su impacto y relevancia técnica o social. -->
-Se eligió este proyecto porque responde a la creciente demanda de soluciones digitales para pedir comida de forma rápida y sencilla. Su impacto social radica en facilitar a los usuarios el acceso a diferentes opciones gastronómicas y en apoyar a los restaurantes locales al ampliar su alcance. En el ámbito técnico, es relevante por integrar tecnologías modernas que mejoran la experiencia del usuario, la gestión de pedidos y la comunicación en tiempo real.
----
+
+El proyecto **El Mandado** surge ante la necesidad de **mejorar los servicios de entrega a domicilio** en sectores donde no hay plataformas digitales accesibles o adaptadas al comercio local.  
+A nivel social, impulsa el **crecimiento del comercio de barrio**; y desde el punto de vista técnico, se eligió una **arquitectura por capas**, lo que permite una mejor organización del código, mantenimiento, escalabilidad y seguridad de la información.
 
 ## 🧩 3. Requisitos del Sistema
 
 ### 3.1 Requisitos Funcionales
 | Código | Descripción | Estado |
-|--------|--------------|--------|
+| RF-01 | El sistema debe permitir registrar usuarios (clientes, repartidores y administradores). | ✅ Implementado |
+| RF-02 | El sistema debe permitir realizar y gestionar pedidos. | 🔄 En desarrollo |
+| RF-03 | El sistema debe procesar pagos y aplicar promociones. | 🔄 En desarrollo |
+| RF-04 | El sistema debe enviar notificaciones sobre el estado del pedido. | ⏳ Pendiente |
 
-<img width="929" height="500" alt="image" src="https://github.com/user-attachments/assets/f8a66cf0-9921-43fe-8c78-883cd42ed47a" />
 
-| RF-01 | El sistema debe permitir registrar usuarios. | ✅ Implementado |
-| RF-02 | El sistema debe permitir iniciar sesión con autenticación segura. | 🔄 En desarrollo |
-| RF-03 | El sistema debe generar reportes de uso. | ⏳ Pendiente |
 
 ### 3.2 Requisitos No Funcionales
 | Código | Descripción | Tipo |
-|--------|--------------|------|
+| RNF-01 | La interfaz debe ser responsiva para móvil y escritorio. | Usabilidad |
+| RNF-02 | La base de datos debe soportar al menos 1000 usuarios y pedidos activos. | Rendimiento |
+| RNF-03 | Los datos deben almacenarse de forma cifrada y segura. | Seguridad |
 
-<img width="925" height="480" alt="image" src="https://github.com/user-attachments/assets/45fb50ef-5f17-422f-a0b8-20e53d97e7c9" />
-
-| RNF-01 | La interfaz debe ser responsiva en escritorio y móvil. | Usabilidad |
-| RNF-02 | La base de datos debe soportar al menos 1000 registros. | Rendimiento |
-| RNF-03 | Los datos deben almacenarse de forma segura. | Seguridad |
-
----
 
 ## 🧭 4. Modelos del Sistema
 
