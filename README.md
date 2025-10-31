@@ -58,23 +58,21 @@ A nivel social, impulsa el **crecimiento del comercio de barrio**; y desde el pu
 ## 🧭 4. Modelos del Sistema
 
 ### 4.1 Diagrama de Casos de Uso
-<!-- Inserta aquí una imagen o enlace al diagrama actualizado -->
 ![Casos de Uso](./docs/diagramas/casos_de_uso.png)
 
 ### 4.2 Diagrama de Clases
-<!-- Inserta aquí una imagen o enlace -->
 ![Diagrama de Clases](./docs/diagramas/diagrama_clases.png)
 
 ### 4.3 Arquitectura del Software
-<!-- Explica brevemente la estructura arquitectónica y su lógica -->
 **Tipo de arquitectura:** Por capas (Presentación, Lógica de Negocio, Datos)
 
-**Descripción:**
-- **Capa de presentación:** interfaz gráfica o visual del sistema.  
-- **Capa lógica:** procesos y reglas de negocio.  
-- **Capa de datos:** almacenamiento y consultas a la base de datos.  
+**Descripción:**  
+Según el documento de arquitectura del sistema, se optó por un **modelo por capas** que separa las responsabilidades en tres niveles:  
+- **Capa de presentación:** interfaz móvil/web que interactúa con los usuarios y domiciliarios.  
+- **Capa lógica:** incluye los módulos *GestorUsuarios*, *GestorPedidos*, *GestorPagos* y *GestorNotificaciones*.  
+- **Capa de datos:** maneja la *BaseDeDatos* encargada del almacenamiento y consultas de usuarios, pedidos y pagos.
 
-**Diagrama de Arquitectura:**
+**Diagrama de Arquitectura:**  
 ![Arquitectura del Sistema](./docs/diagramas/arquitectura.png)
 
 ---
@@ -82,21 +80,22 @@ A nivel social, impulsa el **crecimiento del comercio de barrio**; y desde el pu
 ## ⚙️ 5. Componentes Principales
 | Componente | Función | Interacción | Estado |
 |-------------|----------|-------------|--------|
-| GestorUsuarios | Registrar, autenticar y administrar usuarios | Base de datos, interfaz | ✅ |
-| GestorCursos | Crear y listar cursos | GestorUsuarios | 🔄 |
-| GestorReportes | Generar informes del sistema | Base de datos | ⏳ |
+| GestorUsuarios | Registrar, autenticar y administrar usuarios | Base de datos, GestorPedidos | ✅ |
+| GestorPedidos | Crear, actualizar y consultar pedidos | GestorUsuarios, GestorPagos, GestorNotificaciones | 🔄 |
+| GestorPagos | Procesar pagos y aplicar promociones | GestorPedidos | 🔄 |
+| GestorNotificaciones | Enviar alertas sobre el estado del pedido | GestorPedidos, GestorUsuarios | ⏳ |
+| BaseDeDatos | Almacenar información de usuarios, pedidos y pagos | Todos los gestores | ✅ |
 
 ---
 
 ## 🧰 6. Tecnologías y Herramientas
 | Herramienta | Uso dentro del proyecto |
 |--------------|------------------------|
-| **Git** | Control de versiones local |
-| **GitHub** | Repositorio remoto y trabajo colaborativo |
-| **Draw.io / StarUML** | Diagramas UML |
-| **Lucidchart / Canva** | Esquematización visual |
-| **Unity / Python / HTML-CSS-JS (según caso)** | Desarrollo técnico |
-| **Trello / Notion / Excel** | Planificación y seguimiento |
+| **Git / GitHub** | Control de versiones y trabajo colaborativo |
+| **StarUML / Draw.io** | Creación de diagramas UML |
+| **HTML / CSS / JS / Node.js** | Desarrollo del frontend y backend |
+| **Firebase / MySQL** | Almacenamiento de datos |
+| **Trello / Notion** | Planificación y seguimiento de tareas |
 
 ---
 
@@ -109,11 +108,12 @@ A nivel social, impulsa el **crecimiento del comercio de barrio**; y desde el pu
 | 8 | Arquitectura del software | ✅ |
 | 9 | Gestión de versiones (Git/GitHub) | ✅ |
 | 10 | Documentación técnica inicial | ✅ |
-| 11 | Avance del proyecto final | 🔄 En revisión |
+| 11 | Integración de módulos y pruebas | 🔄 En revisión |
 
 ### 7.2 Control de versiones
-- Rama principal: `main`
-- Ramas secundarias: `feat/`, `fix/`, `docs/`
+- Rama principal: `main`  
+- Ramas secundarias: `feat/`, `fix/`, `docs/`  
 - Último commit:  
   ```bash
   git log -1
+  ```
