@@ -7,7 +7,9 @@ El mandado
 
 **Equipo de Desarrollo:**  
 Marco Antonio Segura Cuero
+
 Fabian Andres Hurtado Viafara
+
 Carlos Eduardo Ñañez Gonzales
 
 **Programa:** Ingeniería de Software I  
@@ -32,17 +34,24 @@ A nivel social, impulsa el **crecimiento del comercio de barrio**; y desde el pu
 
 ### 3.1 Requisitos Funcionales
 | Código | Descripción | Estado |
+
 | RF-01 | El sistema debe permitir registrar usuarios (clientes, repartidores y administradores). | ✅ Implementado |
+
 | RF-02 | El sistema debe permitir realizar y gestionar pedidos. | 🔄 En desarrollo |
+
 | RF-03 | El sistema debe procesar pagos y aplicar promociones. | 🔄 En desarrollo |
+
 | RF-04 | El sistema debe enviar notificaciones sobre el estado del pedido. | ⏳ Pendiente |
 
 
 
 ### 3.2 Requisitos No Funcionales
 | Código | Descripción | Tipo |
+
 | RNF-01 | La interfaz debe ser responsiva para móvil y escritorio. | Usabilidad |
+
 | RNF-02 | La base de datos debe soportar al menos 1000 usuarios y pedidos activos. | Rendimiento |
+
 | RNF-03 | Los datos deben almacenarse de forma cifrada y segura. | Seguridad |
 
 
