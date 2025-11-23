@@ -1,56 +1,63 @@
-<!doctype html>
-<button id="loginBtn" class="pill">Iniciar sesión demo</button>
-<button id="mockOrdersBtn" class="btn-ghost">Cargar pedidos </button>
-</div>
-</div>
-<div class="status">
-<div class="muted">Estado del backend</div>
-<div id="backendStatus" class="pill">Conectado (demo)</div>
-</div>
-</div>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Mandado - Demo Académica</title>
+    <link rel="stylesheet" href="elmandado.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-status">
+            <span id="backend-status-text">Estado del backend:</span>
+            <span id="backend-status-dot" class="status-dot connected">Conectado (demo)</span>
+        </div>
+        <div class="header-actions">
+            <button id="btn-login" class="btn btn-secondary">Iniciar sesión demo</button>
+            <button id="btn-load-orders" class="btn btn-primary">Cargar pedidos</button>
+        </div>
+    </header>
 
+    <main class="container">
+        <section class="architecture-info">
+            <h2>Arquitectura (resumen)</h2>
+            <ul class="microservices-list">
+                <li><i class="fas fa-users"></i> **GestorUsuarios**: registro y autenticación.</li>
+                <li><i class="fas fa-box"></i> **GestorPedidos**: gestión de pedidos.</li>
+                <li><i class="fas fa-credit-card"></i> **GestorPagos**: procesamiento de pagos.</li>
+                <li><i class="fas fa-bell"></i> **GestorNotificaciones**: envíos al usuario.</li>
+            </ul>
+        </section>
 
-<div id="menu" class="card">
-<h2>Menú popular</h2>
-<div class="menu-list" id="menuList"></div>
-</div>
+        <section class="product-list">
+            <h2>Menú Popular</h2>
+            <div id="popular-menu" class="menu-grid">
+                </div>
+        </section>
+        
+        <aside class="cart-summary">
+            <h3>🛒 Carrito <span id="cart-count">0</span></h3>
+            <div id="cart-items" class="cart-items-list">
+                <p id="empty-cart-message">Tu carrito está vacío.</p>
+            </div>
+            
+            <div class="cart-total">
+                <p>Total</p>
+                <p id="cart-total-value">$0.00</p>
+            </div>
+            
+            <div class="cart-actions">
+                <button id="btn-checkout" class="btn btn-success" disabled>Pagar</button>
+                <button id="btn-empty-cart" class="btn btn-danger" disabled>Vaciar</button>
+            </div>
+        </aside>
+    </main>
 
+    <footer class="footer">
+        © 2025 El Mandado — Demo académica
+    </footer>
 
-<div id="about" class="card">
-<h2>Arquitectura (resumen)</h2>
-<ul class="muted">
-<li>GestorUsuarios: registro y autenticación.</li>
-<li>GestorPedidos: gestión de pedidos.</li>
-<li>GestorPagos: procesamiento de pagos.</li>
-<li>GestorNotificaciones: envíos al usuario.</li>
-</ul>
-</div>
-</section>
-
-
-<aside class="cart card">
-<h3>Carrito <span id="cartCount">0</span></h3>
-<div class="cart-items" id="cartItems">
-<p class="muted">Tu carrito está vacío.</p>
-</div>
-<div class="cart-summary">
-<div>
-<div class="muted small">Total</div>
-<strong id="cartTotal">$0.00</strong>
-</div>
-<div class="actions">
-<button id="checkoutBtn" class="pill">Pagar</button>
-<button id="clearCartBtn" class="btn-ghost">Vaciar</button>
-</div>
-</div>
-</aside>
-</main>
-
-
-<div class="toast-wrap" id="toasts"></div>
-<footer>
-<small>&copy; 2025 El Mandado — Demo académica</small>
-</footer>
-<script src="elmandado.js"></script>
+    <script src="elmandado.js"></script>
 </body>
 </html>
