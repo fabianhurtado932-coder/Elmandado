@@ -10,6 +10,8 @@ Marco Antonio Segura Cuero
 
 Fabian Andres Hurtado Viafara
 
+Keiner David Acosta Hoyos
+
 Carlos Eduardo Ñañez Gonzales
 
 **Programa:** Ingeniería de Software I  
