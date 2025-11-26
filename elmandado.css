@@ -123,6 +123,33 @@ body {
     margin-right: 10px;
     color: var(--primary-color);
 }
+.requirement-item {
+    background: var(--card-background); 
+    padding: 10px;
+    margin-bottom: 8px;
+    border-left: 4px solid;
+    box-shadow: var(--shadow);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.req-status-implementado { border-color: var(--success-color); }
+.req-status-en-desarrollo { border-color: var(--primary-color); }
+.req-status-pendiente { border-color: var(--secondary-color); }
+
+.req-status-tag {
+    font-weight bold;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.8em;
+    flex-shrink: 0; /* Evita que el tag se haga pequeño */
+    margin-left: 10px;
+}
+
+.tag-implementado { background-color: #d4edda; color: var(--success-color); }
+.tag-en-desarrollo { background-color: #cce5ff; color: var(--primary-color); }
+.tag-pendiente { background-color: #fcf8e3; color: #856404; } /* Amarillo/Gris */
 
 .menu-grid {
     display: grid;
@@ -211,6 +238,14 @@ body {
     padding-top: 10px;
     margin-top: 10px;
 }
+/* Nuevo estilo para la entrada de cantidad */
+.product-quantity-input {
+    /* Estilo del input que agregaste en el JS */
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    padding: 5px;
+    text-align: center;
+}
 
 .cart-total #cart-total-value {
     color: var(--success-color);
@@ -236,6 +271,33 @@ body {
     margin-top: auto; /* Empuja el footer hacia abajo */
     background-color: var(--card-background);
 }
+@media (min-width: 993px) {
+    .container {
+        display: grid;
+        grid-template-columns: 2fr 1fr; /* Productos y Arquitectura/Requisitos vs Carrito */
+        grid-template-rows: auto auto 1fr; 
+        gap: 30px;
+    }
+.architecture-info {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+    .requirements-info {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+    .product-list {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+    /* Carrito en la columna derecha */
+    .cart-summary {
+        grid-column: 2 / 3;
+        grid-row: 1 / 4; /* Ocupa toda la altura derecha */
+        position: sticky;
+        top: 20px;
+    }
+}
 
 /* Media Queries para diseño responsivo */
 @media (max-width: 992px) {
@@ -246,4 +308,13 @@ body {
         position: static; /* Deshacer el sticky en móvil */
         width: 100%;
     }
+}
+/* Nuevo estilo para la imagen del producto */
+.product-image {
+    width: 100%; /* Ocupa todo el ancho de la tarjeta */
+    max-height: 120px; /* Altura máxima para que no se extienda demasiado */
+    object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionarse */
+    border-radius: 4px;
+    margin-bottom: 10px;
+    display: block;
 }
