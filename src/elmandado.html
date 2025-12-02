@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Mandado - Demo Académica</title>
+    <link rel="stylesheet" href="elmandado.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-status">
+            <span id="backend-status-text">Estado del backend:</span>
+            <span id="backend-status-dot" class="status-dot connected">Conectado (demo)</span>
+        </div>
+        <div class="header-actions">
+            <button id="btn-login" class="btn btn-secondary">Iniciar sesión demo</button>
+            <button id="btn-load-orders" class="btn btn-primary">Cargar pedidos</button>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="architecture-info">
+            <h2>Arquitectura (resumen)</h2>
+            <ul class="microservices-list">
+                <li><i class="fas fa-users"></i> **GestorUsuarios**: registro y autenticación.</li>
+                <li><i class="fas fa-box"></i> **GestorPedidos**: gestión de pedidos.</li>
+                <li><i class="fas fa-credit-card"></i> **GestorPagos**: procesamiento de pagos.</li>
+                <li><i class="fas fa-bell"></i> **GestorNotificaciones**: envíos al usuario.</li>
+            </ul>
+        </section>
+
+        <section class="product-list">
+            <h2>Menú Popular</h2>
+            <div id="popular-menu" class="menu-grid">
+            </div>
+        </section>
+        
+        <aside class="cart-summary">
+            <h3>🛒 Carrito <span id="cart-count">0</span></h3>
+            <div id="cart-items" class="cart-items-list">
+                <p id="empty-cart-message">Tu carrito está vacío.</p>
+            </div>
+            
+            <div class="cart-total">
+                <p>Total</p>
+                <p id="cart-total-value">$0.00</p>
+            </div>
+            
+            <div class="cart-actions">
+                <button id="btn-checkout" class="btn btn-success" disabled>Pagar</button>
+                <button id="btn-empty-cart" class="btn btn-danger" disabled>Vaciar</button>
+            </div>
+        </aside>
+    </main>
+
+    <footer class="footer">
+        © 2025 El Mandado — Demo académica
+    </footer>
+
+    <script src="elmandado.js"></script>
+</body>
+</html>
