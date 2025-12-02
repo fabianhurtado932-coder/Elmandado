@@ -60,7 +60,8 @@ A nivel social, impulsa el **crecimiento del comercio de barrio**; y desde el pu
 ## 🧭 4. Modelos del Sistema
 
 ### 4.1 Diagrama de Casos de Uso
-![Casos de Uso](./docs/diagramas/casos_de_uso.png)
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/f8dd9426-5fe3-4de6-8dc3-3fac9ca23247" />
+
 
 ### 4.2 Diagrama de Clases
 ![Diagrama de Clases](./docs/diagramas/diagrama_clases.png)
