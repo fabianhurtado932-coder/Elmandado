@@ -154,6 +154,31 @@ body {
     margin-bottom: 10px;
 }
 
+/* ⭐ ESTILOS para el control de cantidad en la TARJETA de producto */
+.quantity-control-wrapper {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    width: 100%; 
+}
+
+.product-quantity-input {
+    width: 60px; 
+    padding: 8px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    /* Se eliminaron las reglas para ocultar los botones nativos (spinner) */
+}
+
+.add-to-cart-btn {
+    flex-grow: 1; 
+    padding: 8px 10px;
+}
+/* FIN DE ESTILOS DE TARJETA ⭐ */
+
+
 /* Carrito */
 .cart-summary {
     flex: 1; 
@@ -180,9 +205,14 @@ body {
 .cart-item {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start; /* Alinea al inicio para los controles de cantidad */
     border-bottom: 1px dashed var(--border-color);
     padding: 8px 0;
+}
+
+.item-details {
+    display: flex;
+    flex-direction: column;
 }
 
 .item-details span:first-child {
@@ -196,11 +226,36 @@ body {
     color: var(--danger-color);
     cursor: pointer;
     font-size: 1.2em;
+    padding-left: 10px;
 }
 
 .item-remove:hover {
     color: #a71d2a;
 }
+
+/* ⭐ ESTILOS para control de cantidad en el CARRITO */
+.item-quantity-control {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    margin: 5px 0; 
+}
+
+.item-quantity-control .qty-display {
+    padding: 0 8px;
+    font-weight: bold;
+    font-size: 0.9em;
+    min-width: 25px;
+    text-align: center;
+}
+
+.item-quantity-control .change-qty-btn {
+    padding: 2px 6px;
+    font-size: 0.8em;
+    line-height: 1; 
+}
+/* FIN DE ESTILOS DE CARRITO ⭐ */
+
 
 .cart-total {
     display: flex;
