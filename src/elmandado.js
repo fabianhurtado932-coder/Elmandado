@@ -312,12 +312,4 @@ document.addEventListener('DOMContentLoaded', () => {
         updateCartUI(); 
     }
 
-<<<<<<< HEAD
 });
-=======
-<<<<<<<< HEAD:elmandado.js
-});
-========
-}); // Fin del DOMContentLoaded
->>>>>>>> ce1ae9cbd27d645a06a8b29814697c47c104bde1:src/elmandado.js
->>>>>>> ce1ae9cbd27d645a06a8b29814697c47c104bde1
