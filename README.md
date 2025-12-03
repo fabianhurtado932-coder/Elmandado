@@ -64,8 +64,8 @@ A nivel social, impulsa el **crecimiento del comercio de barrio**; y desde el pu
 
 
 ### 4.2 Diagrama de Clases
-![Diagrama de Clases](.<img width="797" height="1234" alt="image" src="https://github.com/user-attachments/assets/88b67122-c5b3-4718-b2e5-c1c6fed1103d" />
-)
+![Diagrama de Clases]
+(.<img width="797" height="1234" alt="image" src="https://github.com/user-attachments/assets/88b67122-c5b3-4718-b2e5-c1c6fed1103d" />)
 
 ### 4.3 Arquitectura del Software
 **Tipo de arquitectura:** Por capas (Presentación, Lógica de Negocio, Datos)
