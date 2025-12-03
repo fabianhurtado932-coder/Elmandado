@@ -76,9 +76,6 @@ Según el documento de arquitectura del sistema, se optó por un **modelo por ca
 - **Capa lógica:** incluye los módulos *GestorUsuarios*, *GestorPedidos*, *GestorPagos* y *GestorNotificaciones*.  
 - **Capa de datos:** maneja la *BaseDeDatos* encargada del almacenamiento y consultas de usuarios, pedidos y pagos.
 
-**Diagrama de Arquitectura:**  
-![Arquitectura del Sistema](./docs/diagramas/arquitectura.png)
-
 ---
 
 ## 5. Componentes Principales
